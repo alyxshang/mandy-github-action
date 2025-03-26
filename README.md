@@ -1,6 +1,6 @@
-# GITHUB ACTION FOR MANDY :rocket: :pill: :fire:
+# MANDY GITHUB ACTION :sparkles: :fire:
 
-***A GitHub action to build your Mandy-powered project! :rocket: :pill: :fire:***
+***A GitHub action to build your Mandy-powered project! :sparkles: :fire:***
 
 ## ABOUT :books:
 
