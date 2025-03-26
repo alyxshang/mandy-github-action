@@ -1,0 +1,19 @@
+name: "Install Mandy."
+description: "A GitHub action to build your Mandy-powered project!"
+icon: "activity"
+color: "purple"
+runs:
+  using: "composite"
+  steps:
+    - name: "Install WGet."
+      shell: bash
+      run: sudo apt-get install wget sudo -y
+    - name: "Download Mandy."
+      shell: bash
+      run: wget "https://github.com/alyxshang/mandy/releases/download/v.0.1.0/mandy-linux-v.0.1.0"
+    - name: "Rename Mandy and install."
+      shell: bash
+      run: |
+        mv mandy-linux-v.0.1.0 mandy
+        chmod a+x mandy
+        sudo mv mandy /usr/bin
