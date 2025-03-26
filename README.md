@@ -29,7 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: alyxshang/mandy-github-action@v.0.1.0
-      - name: "Build the Mandy site"
+      - name: "Build the Mandy site."
         run: mandy -c .
 ```
 
