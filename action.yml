@@ -1,6 +1,6 @@
 name: "Install Mandy."
 description: "A GitHub action to build your Mandy-powered project!"
-icon: "activity"
+icon: "check-circle"
 color: "purple"
 runs:
   using: "composite"
