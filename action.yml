@@ -18,3 +18,5 @@ runs:
         rm -rf *.tar.gz
         chmod a+x mandy
         sudo mv mandy /usr/bin
+    - name: "Verify installation."
+      run: mandy -v
