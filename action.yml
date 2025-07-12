@@ -19,4 +19,5 @@ runs:
         chmod a+x mandy
         sudo mv mandy /usr/bin
     - name: "Verify installation."
+      shell: bash
       run: mandy -v
