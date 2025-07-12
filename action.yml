@@ -10,10 +10,11 @@ runs:
       run: sudo apt-get install wget sudo -y
     - name: "Download Mandy."
       shell: bash
-      run: wget "https://github.com/alyxshang/mandy/releases/download/v.0.1.0/mandy-linux-v.0.1.0"
+      run: wget "https://github.com/alyxshang/mandy/releases/download/v.0.1.0/mandy-linux-v.0.1.0.tar.gz"
     - name: "Rename Mandy and install."
       shell: bash
       run: |
-        mv mandy-linux-v.0.1.0 mandy
+        tar -xvf mandy-linux-v.0.1.0.tar.gz
+        rm -rf *.tar.gz
         chmod a+x mandy
         sudo mv mandy /usr/bin
